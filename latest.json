@@ -1,11 +1,11 @@
 {
-  "version": "1.2.0",
-  "notes": "1. Set default installation path to D:\\Laalwani app (with smart auto-detection & persistence across updates).\n2. Intelligent Sales Analytics in Billing: automatic analysis of store transactions to flag and shortlist top-selling products (🔥 Top Seller).\n3. Replaced all native browser confirm/alert popups with sleek in-app ERP modal dialogs (Zero 127.0.0.1 browser popups).\n4. Launcher connection fix: Chrome prioritized over Edge, persistent background local server, no connection refused on Ctrl+Shift+R.\n5. Official Logo & Icon Integration: 3D building emblem for Windows app icon and navigation, authentic dark brand logo for bills, PDFs, and invoices.\n6. Multi-page pagination engine for 50+ line items on A4 invoices with Page X of Y numbering and clean table flow.\n7. Zero-mock, completely clean initial database with zero debt and zero fake invoices.",
-  "pub_date": "2026-11-01T18:45:00Z",
+  "version": "1.2.1",
+  "notes": "1. Dedicated Google Chrome App Mode prioritization for native desktop window.\n2. Complete removal of external GitHub update alerts/manifest checks.\n3. In-App Operational Notifications Center (Low Stock, Salary Due, Khata Reminders, Pending Orders).\n4. All delete and confirmation actions converted to in-app ERP dialogs.\n5. Multi-page A4 invoice pagination engine for 50+ line items.\n6. Clean database with zero fake data.",
+  "pub_date": "2026-11-01T19:15:00Z",
   "platforms": {
     "windows-x86_64": {
       "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/raw/main/Laalwani-Setup.exe",
-      "sha256": "75AD8A2BECFFD41ACD21C1C9150B1BA505550A3A289FD41891F175BFA7A9FBBF"
+      "sha256": "DF8748BCC8A6007A4A2BC163F7E3131F455CF730B68BA62CB9B20080E54F9282"
     }
   },
   "view_url": "https://github.com/harshp093/harshp093-deploycrew-software-releases"
