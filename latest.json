@@ -1,11 +1,11 @@
 {
-  "version": "1.3.0",
-  "notes": "1. Comprehensive Dashboard Analytics: Live Revenue, Purchases Inflow, COGS, Gross Profit & Margin %, Payment Mode Breakdown, and Full Transaction Register.\n2. Pixel-Perfect A4 Invoices & PDF Export via html2canvas (Zero corrupted Gujarati glyphs; identical to on-screen design).\n3. Billing Subpages: Live POS Counter, Dedicated Held Orders Queue (Resume/Discard), and Invoices History & Duplicate Copy Archive.\n4. Fixed Customer Autocomplete Dropdown Stacking Context (z-index layering & outside-click auto-close).\n5. Sectionwise Documents & Export Archive in Accounts (Invoices, Purchases, Delivery Challans, Staff Salary Slips, GST Excel) with 1-click Windows Explorer folder opening.\n6. Real disk writing for backups (D:\\Laalwani_Backups) and exports (D:\\Laalwani_Exports) via backend launcher APIs.",
-  "pub_date": "2026-11-01T20:10:00Z",
+  "version": "1.3.1",
+  "notes": "1. 1-Click Silent Auto-Update System: Background download and seamless setup execution with zero external URLs.\n2. Dynamic Custom Categories in Stock: Add any custom category (Mirrors, Hardware, Bath Accessories) with full persistence.\n3. Openable Category Explorer in Stock: Category valuation, unit counts, and instant 1-click filtering.\n4. Newest-First Sorting & Top 10 Toggle across Customer line list and Stock inventory.\n5. Physical File Persistence: Direct disk writing of all PDFs and Excel spreadsheets into D:\\Laalwani_Exports and backups into D:\\Laalwani_Backups.",
+  "pub_date": "2026-11-01T21:05:00Z",
   "platforms": {
     "windows-x86_64": {
       "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/raw/main/Laalwani-Setup.exe",
-      "sha256": "049D6C1372A430C87D93151CA9404DC2D4E1CCDCB6D8DE74671809B4B22DC736"
+      "sha256": "FD5B6EC38AA9DEC32744653C3AE79182AB12228AD13EBF7F733966ED3F58F20F"
     }
   },
   "view_url": "https://github.com/harshp093/harshp093-deploycrew-software-releases"
