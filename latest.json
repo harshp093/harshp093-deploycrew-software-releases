@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "notes": "૧. સંપૂર્ણ વ્યાપાર મેનેજમેન્ટ સિસ્ટમ (૧૦,૦૦૦+ સામાન સ્ટોક, બિલિંગ, ખાતાવહી).\n૨. પાકું A4 ટેક્સ ઇન્વોઇસ અને જીએસટી ગણતરી.\n૩. ગુજરાતી, હિન્દી અને અંગ્રેજી ત્રિભાષી ઇન્ટરફેસ.",
+  "pub_date": "2026-11-01T14:30:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/releases/download/v1.0.0/Laalwani-Setup.exe"
+    }
+  }
+}
