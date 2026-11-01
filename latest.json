@@ -1,11 +1,11 @@
 {
-  "version": "1.2.1",
-  "notes": "1. Dedicated Google Chrome App Mode prioritization for native desktop window.\n2. Complete removal of external GitHub update alerts/manifest checks.\n3. In-App Operational Notifications Center (Low Stock, Salary Due, Khata Reminders, Pending Orders).\n4. All delete and confirmation actions converted to in-app ERP dialogs.\n5. Multi-page A4 invoice pagination engine for 50+ line items.\n6. Clean database with zero fake data.",
-  "pub_date": "2026-11-01T19:15:00Z",
+  "version": "1.3.0",
+  "notes": "1. Comprehensive Dashboard Analytics: Live Revenue, Purchases Inflow, COGS, Gross Profit & Margin %, Payment Mode Breakdown, and Full Transaction Register.\n2. Pixel-Perfect A4 Invoices & PDF Export via html2canvas (Zero corrupted Gujarati glyphs; identical to on-screen design).\n3. Billing Subpages: Live POS Counter, Dedicated Held Orders Queue (Resume/Discard), and Invoices History & Duplicate Copy Archive.\n4. Fixed Customer Autocomplete Dropdown Stacking Context (z-index layering & outside-click auto-close).\n5. Sectionwise Documents & Export Archive in Accounts (Invoices, Purchases, Delivery Challans, Staff Salary Slips, GST Excel) with 1-click Windows Explorer folder opening.\n6. Real disk writing for backups (D:\\Laalwani_Backups) and exports (D:\\Laalwani_Exports) via backend launcher APIs.",
+  "pub_date": "2026-11-01T20:10:00Z",
   "platforms": {
     "windows-x86_64": {
       "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/raw/main/Laalwani-Setup.exe",
-      "sha256": "DF8748BCC8A6007A4A2BC163F7E3131F455CF730B68BA62CB9B20080E54F9282"
+      "sha256": "049D6C1372A430C87D93151CA9404DC2D4E1CCDCB6D8DE74671809B4B22DC736"
     }
   },
   "view_url": "https://github.com/harshp093/harshp093-deploycrew-software-releases"
