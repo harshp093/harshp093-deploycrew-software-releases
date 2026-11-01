@@ -1,11 +1,11 @@
 {
-  "version": "1.1.0",
-  "notes": "1. Remember & detect user-chosen installation path across re-installs & updates.\n2. Non-intrusive minimal Bell notification icon (dashboard-blocking banner removed).\n3. Product Catalog Grid directly on Billing page with real-time search & Star Shortlist.\n4. Instant 1-click Auto-Add Customer during billing.\n5. Line list Grid table for Customers (Zero cards) with click-to-open 360° Profile.\n6. 100% Comprehensive Translations across Gujarati, Hindi, and English for all UI headings, shop names, and buttons.",
-  "pub_date": "2026-11-01T15:30:00Z",
+  "version": "1.2.0",
+  "notes": "1. Set default installation path to D:\\Laalwani app (with smart auto-detection & persistence across updates).\n2. Intelligent Sales Analytics in Billing: automatic analysis of store transactions to flag and shortlist top-selling products (🔥 Top Seller).\n3. Replaced all native browser confirm/alert popups with sleek in-app ERP modal dialogs (Zero 127.0.0.1 browser popups).\n4. Launcher connection fix: Chrome prioritized over Edge, persistent background local server, no connection refused on Ctrl+Shift+R.\n5. Official Logo & Icon Integration: 3D building emblem for Windows app icon and navigation, authentic dark brand logo for bills, PDFs, and invoices.\n6. Multi-page pagination engine for 50+ line items on A4 invoices with Page X of Y numbering and clean table flow.\n7. Zero-mock, completely clean initial database with zero debt and zero fake invoices.",
+  "pub_date": "2026-11-01T18:45:00Z",
   "platforms": {
     "windows-x86_64": {
       "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/raw/main/Laalwani-Setup.exe",
-      "sha256": "1613B069A81B3FC71B8117A57FB87945EC694D57235D8A295AEEB07E390C500D"
+      "sha256": "75AD8A2BECFFD41ACD21C1C9150B1BA505550A3A289FD41891F175BFA7A9FBBF"
     }
   },
   "view_url": "https://github.com/harshp093/harshp093-deploycrew-software-releases"
