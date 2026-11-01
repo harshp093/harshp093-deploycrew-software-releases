@@ -1,11 +1,12 @@
 {
   "version": "1.1.0",
-  "notes": "1. Complete CRUD across all modules (Purchases, Suppliers, Orders, Challans, Vouchers, Cheques, Staff, Advances).\n2. Structured Shop Catalog Dropdown Selector for 10,000+ Items.\n3. Comprehensive Non-Technical Gujarati Business Guide in Settings.\n4. Zero test data resurrection bug permanently resolved.",
-  "pub_date": "2026-11-01T15:00:00Z",
+  "notes": "1. Remember & detect user-chosen installation path across re-installs & updates.\n2. Non-intrusive minimal Bell notification icon (dashboard-blocking banner removed).\n3. Product Catalog Grid directly on Billing page with real-time search & Star Shortlist.\n4. Instant 1-click Auto-Add Customer during billing.\n5. Line list Grid table for Customers (Zero cards) with click-to-open 360° Profile.\n6. 100% Comprehensive Translations across Gujarati, Hindi, and English for all UI headings, shop names, and buttons.",
+  "pub_date": "2026-11-01T15:30:00Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/releases/download/v1.1.0/Laalwani-Setup.exe",
-      "sha256": "CE6341CA380CD8C7D39EEB01E18E2268A669A7C7AEB105A6A76B2D03BF73CD24"
+      "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/raw/main/Laalwani-Setup.exe",
+      "sha256": "1613B069A81B3FC71B8117A57FB87945EC694D57235D8A295AEEB07E390C500D"
     }
-  }
+  },
+  "view_url": "https://github.com/harshp093/harshp093-deploycrew-software-releases"
 }
