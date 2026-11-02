@@ -1,11 +1,11 @@
 {
-  "version": "2.2.0",
-  "notes": "1. Single-Word Dashboard Cards: Redesigned KPI metrics into crisp single-word titles (Sales, Cash, Receivables, Payables, Profit) with simplified terminology and high-contrast collection badges.\n2. Minimal Billing Cart Action: Swapped bulky buttons for a fast, minimal text 'Add' action without cluttering icons.\n3. Complete Removal of Estimate Bills: Eliminated estimate bills throughout the software; streamlined billing to standard GST Tax Invoices.\n4. Named Hold Queue: Replaced generic hold timestamps with customer-attributed badges (Hold: [Customer Name]).\n5. 10,000+ Items High-Density Grid & Pagination: Implemented responsive pagination controls (15/25/50/100 per page) and compact rows to prevent scroll fatigue.\n6. Collapsible Vertical Category Drawer: Swapped bulky horizontal category bar for a space-saving collapsible sidebar with live item counts.",
-  "pub_date": "2026-11-02T08:05:00Z",
+  "version": "2.3.0",
+  "notes": "1. Removed Orders Page & Standalone Khata Tab: Streamlined top navigation by eliminating redundant Orders and Khata tabs. Customer credit ledgers, passbooks, and payment receipts are now cleanly integrated directly into Customers (F3).\n2. Complete Returns & Adjustments Redesign (SS 3): Executive dark hero banner, 5-channel interactive explorer grid, universal custom date range picker, pre-loaded realistic sanitaryware sample records, and instant printable A4 vouchers.\n3. Complete Document OCR & Reconciler Redesign (SS 4): Executive hero banner with 3 ingestion channels, 3 instant one-click test sample documents (Kajaria, Jaquar, Astral), live parsed line items table, bulk CSV catalog wizard, and bank statement auto-reconciler.\n4. Universal Custom Date Filter: Reusable DateRangeFilter supporting presets (All Dates, Today, This Week, This Month, FY 26-27) and custom From Date/To Date across Dashboard, Returns, Import/OCR, Purchases, and Invoices Archive.\n5. Zero Blank Void & Responsive Screen Sizing: Replaced all empty white containers with high-density, viewport-optimized layout inspired by Stock Inventory.",
+  "pub_date": "2026-11-02T08:55:00Z",
   "platforms": {
     "windows-x86_64": {
       "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/raw/main/Laalwani-Setup.exe",
-      "sha256": "1D75807F0F19320EEA9337D4F10BCA2D100579790F178FA86B2C7D21CC050272"
+      "sha256": "CF76E22EEDA8507279E0C9E56D7CD2C2B8083A0130A7B34DB6772DF5F3B23B0E"
     }
   },
   "view_url": "https://github.com/harshp093/harshp093-deploycrew-software-releases"
