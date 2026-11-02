@@ -1,11 +1,11 @@
 {
-  "version": "2.4.0",
-  "notes": "1. Removed Duplicate + Signs: Cleaned all action buttons across Returns, Purchases, Stock, Parties, and Accounts to display standard single + icons without duplicate label text.\n2. Ultra-Minimal Main Layout: Eliminated bulky stacked cards and compressed headers into streamlined single-row executive bars, expanding table viewports by over 70% on standard laptop displays.\n3. Dedicated Deep Subpages: Full-screen detailed subpages with back navigation for Credit/Debit Notes, Purchase Orders, Supplier Profiles, and Product Master details.\n4. Universal List Limit Filter (10 | 20 | 50 | 100): Integrated row selector dropdowns and pagination controls (Prev/Next, Page X of Y) across Returns, Purchases, Suppliers, GRN Receipts, Stock Inventory, Customers, and Day Book / Vouchers.\n5. Asset & Logo Resilience: Enhanced logo fallbacks with direct image asset bundling and graceful SVG error handling.",
-  "pub_date": "2026-11-02T10:00:00Z",
+  "version": "2.5.0",
+  "notes": "1. Zero-Hover Architecture: Eliminated all hover transforms, scale jumps, translateY shifts, and hover-triggered action reveals across every page, button, table row, and modal in the software. All actions are permanently visible and click-driven.\n2. Light & Dark Theme Support: Seamless one-click Light Mode / Dark Mode toggle in TopNav with instant HTML class switching and persistent storage.\n3. Synchronous Embedded Startup Emblem: Embedded Base64 architectural vector emblem and direct fallback ensuring 100% reliable startup rendering with zero broken image placeholders.\n4. Minimal Import & OCR Redesign: Removed congested dark hero box and redundant module cards, replacing with a streamlined executive header, dedicated subpage views (OCR Document Digitizer, Bulk CSV / Excel Catalog, Bank Statement Reconciler), and row limit filters (10 | 20 | 50 | 100).\n5. Complete Removal of Orders Page: Fully cleaned up legacy orders module, streamlined billing actions to minimal text-based controls, removed walk-in cash customer button, and added named hold order recall queue.",
+  "pub_date": "2026-11-02T10:15:00Z",
   "platforms": {
     "windows-x86_64": {
       "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/raw/main/Laalwani-Setup.exe",
-      "sha256": "1ADFBBDB01B4ADDC737E48243023A22DFF5A5F828F0EBC6E7EAB2A1C3F63AF95"
+      "sha256": "5E0A3E755B6D3311AE0FD242DB05BBD9E0B107698D531D08E5326F0101A98DBB"
     }
   },
   "view_url": "https://github.com/harshp093/harshp093-deploycrew-software-releases"
