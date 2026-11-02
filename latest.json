@@ -1,11 +1,11 @@
 {
-  "version": "1.5.0",
-  "notes": "1. Dedicated Information Display Pages: Full-width dedicated Customer Profile Page and Product Profile Page with breadcrumbs, KPI summaries, and historical ledgers.\n2. Compact Data Entry Modals: Clean, responsive multi-column popups with permanent field labels, required * indicators, and real-world placeholders for all create/edit workflows.\n3. Pure Dynamic Tri-lingual Localization: Full elimination of bilingual bracketed text and hardcoded strings across all pages, modals, startup screen, and the 10-module Business Operating Guide.\n4. Auto-Remembered D:\\Laalwani app Installation Path: Default installer priority set to D:\\Laalwani app, automatically detecting and updating existing installations.\n5. High-Definition Pixel-Perfect A4 Invoices & Challans: Crisp Gujarati and English typography, zero mojibake corruption, multi-page pagination for 50+ items.\n6. Zero-Data Pristine Production Database: Zero demo data, clean initial launch.",
-  "pub_date": "2026-11-02T03:15:00Z",
+  "version": "1.6.0",
+  "notes": "1. Interactive Business Intelligence Dashboard: Connected Counter Cash in Hand, Gross Sales, Khata Receivables, Supplier Payables, and Gross Profit. Added quick actions for Customer Cash Collection and Supplier Payments.\n2. Recent Invoices Register: High-density register with smart filters (Today, Yesterday, Week, All Bills, Tax Invoices, Estimates, Payment Modes) and clean commercial English column headers.\n3. Purchases & Supplier Banking System: High-density Supplier Directory grid with copyable UPI IDs and Bank A/c details. Complete Pay Supplier modal supporting UPI, NEFT, Cheque, and Cash with automated Accounts vouchers.\n4. Site Bookings Payment Collection: Instant '+ Collect Payment' action on Site Orders, auto-reducing balance due, updating Counter Cash, and creating financial receipt vouchers.\n5. Staff Salary Settlement Fix: Complete monthly settlement workflow with payment mode selection, advance deduction, and salary voucher generation.\n6. Online Payment Integration Guide: Comprehensive architecture guide explaining Indian payment gateways (Razorpay, Cashfree, PhonePe), 0% UPI MDR, and merchant vs customer fee absorption.",
+  "pub_date": "2026-11-02T04:10:00Z",
   "platforms": {
     "windows-x86_64": {
       "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/raw/main/Laalwani-Setup.exe",
-      "sha256": "3BD6C408D88D5D5C4F7C32DC19941B4CB14CADE6F17DAF43EADB1FC293101AAA"
+      "sha256": "56966AF14328964A7F44BBC90FF97081E57AA64D39185F0646462D975395EE11"
     }
   },
   "view_url": "https://github.com/harshp093/harshp093-deploycrew-software-releases"
