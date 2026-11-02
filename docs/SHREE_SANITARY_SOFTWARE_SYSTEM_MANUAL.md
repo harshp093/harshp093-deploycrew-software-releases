@@ -447,31 +447,77 @@ This software is custom-built and optimized for:
 
 ## 12. Database Schema & Key Entities Reference
 
-### `Invoice` (Sales Register)
+### `Invoice` & `CartItem` (Sales Register)
 ```typescript
 interface Invoice {
   id: string;
   invoiceNumber: string;       // e.g. "SS/26-27/0101" or "EST/2026/0045"
+  invoiceType: 'TAX_INVOICE' | 'ESTIMATE';
   customerId: string;
   customerName: string;
   customerPhone?: string;
-  invoiceType: 'TAX_INVOICE' | 'ESTIMATE';
-  items: InvoiceItem[];
+  customerGstin?: string;
+  items: CartItem[];
   subtotal: number;
-  taxableAmount: number;
-  cgst: number;
-  sgst: number;
-  igst: number;
-  totalTax: number;
-  totalAmount: number;
   totalDiscount: number;
-  payments: PaymentMethodDetail[];
+  taxableAmount: number;
+  cgstAmount: number;
+  sgstAmount: number;
+  igstAmount: number;
+  roundOff: number;
+  totalAmount: number;
+  payments: InvoicePayment[];  // [{ method: 'CASH' | 'UPI' | 'CARD' | 'KHATA', amount: number }]
+  paidAmount: number;
+  balanceAmount: number;
   status: 'ACTIVE' | 'CANCELLED';
+  createdBy: string;
   createdAt: string;
+}
+
+interface CartItem {
+  id: string;
+  product: Product;
+  quantity: number;
+  uom: 'BOX' | 'SQFT' | 'PCS' | 'MTR' | 'SET';
+  unitPrice: number;
+  discountPercent: number;
+  taxRate: number;
+  discountAmount: number;
+  taxableAmount: number;
+  taxAmount: number;
+  lineTotal: number;
+  tileCalculatedSqft?: number;
+  tileCalculatedBoxes?: number;
 }
 ```
 
-### `SalesOrder` (Building Site Staged Deliveries)
+### `Product` & `TileSpecs` (Warehouse Catalog)
+```typescript
+interface Product {
+  id: string;
+  sku: string;                 // e.g. "CER-F1020"
+  barcode?: string;
+  name: string;                // e.g. "Cera Wall Hung Commode"
+  brand: string;               // "Cera", "Jaquar", "Astral", "Somany"
+  category: string;            // "TILES" | "SANITARY" | "FAUCETS" | "PLUMBING" | "OTHER"
+  uom: 'BOX' | 'SQFT' | 'PCS' | 'MTR' | 'SET';
+  hsn: string;                 // e.g. "6910", "8481", "6907"
+  taxRate: number;             // Default 18%
+  purchasePrice: number;
+  mrp: number;
+  sellingPrice: number;
+  onHandQty: number;
+  minStockLevel: number;
+  tileSpecs?: {
+    sqftPerBox: number;
+    pcsPerBox: number;
+    size: string;              // e.g. "600x600 mm"
+    finish?: string;           // "Glossy", "Matte", "Vitrified"
+  };
+}
+```
+
+### `SalesOrder` & `DeliveryChallan` (Site Staged Deliveries)
 ```typescript
 interface SalesOrder {
   id: string;
@@ -489,10 +535,29 @@ interface SalesOrder {
   advanceReceived: number;
   balanceAmount: number;
   orderStatus: 'BOOKED' | 'IN_PROGRESS' | 'COMPLETED' | 'CANCELLED';
+  notes?: string;
+}
+
+interface DeliveryChallan {
+  id: string;
+  challanNumber: string;       // e.g. "DC/2026/001"
+  orderId: string;
+  orderNumber: string;
+  customerId: string;
+  customerName: string;
+  siteAddress: string;
+  dispatchDate: string;
+  stageName: string;
+  driverName: string;
+  driverPhone: string;
+  vehicleNumber: string;
+  itemsDispatched: { productName: string; qty: number; uom: string }[];
+  deliveryStatus: 'DISPATCHED' | 'DELIVERED';
+  receiverSign?: string;
 }
 ```
 
-### `Supplier` & `SupplierPayment` (Morbi Factory Outflows)
+### `Supplier`, `PurchaseOrder`, `GoodsReceiptNote` & `SupplierPayment`
 ```typescript
 interface Supplier {
   id: string;
@@ -508,8 +573,188 @@ interface Supplier {
   upiId?: string;              // e.g. "jaquar.morbi@hdfcbank"
   outstandingPayable: number;
 }
+
+interface PurchaseOrder {
+  id: string;
+  poNumber: string;            // e.g. "PO/2026/001"
+  supplierId: string;
+  supplierName: string;
+  orderDate: string;
+  expectedDate: string;
+  items: PurchaseItem[];
+  subtotal: number;
+  taxAmount: number;
+  freightCost: number;
+  totalAmount: number;
+  status: 'DRAFT' | 'SENT' | 'RECEIVED' | 'CANCELLED';
+}
+
+interface GoodsReceiptNote {
+  id: string;
+  grnNumber: string;           // e.g. "GRN/2026/001"
+  poId: string;
+  poNumber: string;
+  supplierId: string;
+  supplierName: string;
+  receivedDate: string;
+  carrierVehicle?: string;
+  items: {
+    productId: string;
+    productName: string;
+    orderedQty: number;
+    receivedQty: number;
+    acceptedQty: number;
+    damagedQty: number;
+    shadeLot: string;
+  }[];
+  status: 'INSPECTED' | 'STORED';
+}
+
+interface SupplierPayment {
+  id: string;
+  supplierId: string;
+  supplierName: string;
+  date: string;
+  amount: number;
+  paymentMode: 'BANK' | 'CASH' | 'CHEQUE' | 'UPI';
+  refNumber?: string;
+  notes?: string;
+}
+```
+
+### `Employee`, `EmployeeAdvance` & `SalarySettlement`
+```typescript
+interface Employee {
+  id: string;
+  code: string;
+  name: string;
+  phone: string;
+  role: string;                // e.g. "Sales Cashier", "Warehouse Helper"
+  salaryType: 'MONTHLY' | 'DAILY';
+  baseSalary: number;
+  joiningDate: string;
+  active: boolean;
+}
+
+interface EmployeeAdvance {
+  id: string;
+  employeeId: string;
+  employeeName: string;
+  date: string;
+  amount: number;
+  reason?: string;
+  settled: boolean;
+}
+
+interface SalarySettlement {
+  id: string;
+  employeeId: string;
+  employeeName: string;
+  month: string;               // e.g. "2026-11"
+  baseSalary: number;
+  advancesDeducted: number;
+  netPaid: number;
+  paymentMode: 'CASH' | 'BANK' | 'UPI';
+  refNo?: string;
+  paidAt: string;
+}
+```
+
+### `CashSession` (Counter Drawer Reconciliation)
+```typescript
+interface CashSession {
+  id: string;
+  openedAt: string;
+  openingCash: number;         // e.g. 5000.00
+  closedAt?: string;
+  expectedCash: number;        // Opening + Cash Sales + Receipts - Outflows
+  actualCash?: number;         // Physical denomination count
+  status: 'OPEN' | 'CLOSED';
+}
+```
+
+### `Voucher`, `DayBookEntry` & `ChequeRecord` (Double-Entry Financials)
+```typescript
+interface Voucher {
+  id: string;
+  voucherNumber: string;       // e.g. "VOU/2026/014"
+  voucherType: 'PAYMENT' | 'RECEIPT' | 'CONTRA' | 'JOURNAL';
+  date: string;
+  accountDebit: string;
+  accountCredit: string;
+  amount: number;
+  partyName?: string;
+  refNumber?: string;
+  narration: string;
+  createdBy: string;
+}
+
+interface DayBookEntry {
+  id: string;
+  timestamp: string;
+  type: 'SALE' | 'PURCHASE' | 'EXPENSE' | 'RECEIPT' | 'CONTRA';
+  refNumber: string;
+  partyName: string;
+  debit: number;
+  credit: number;
+  balanceAfter: number;
+  description: string;
+}
+
+interface ChequeRecord {
+  id: string;
+  chequeNumber: string;
+  bankName: string;
+  partyName: string;
+  type: 'RECEIVED' | 'ISSUED';
+  amount: number;
+  issueDate: string;
+  dueDate: string;
+  status: 'PENDING' | 'CLEARED' | 'BOUNCED';
+  clearedDate?: string;
+}
+```
+
+### `AppSettings` (User-Editable Store Configuration)
+```typescript
+interface AppSettings {
+  shopName: string;
+  tradeName: string;
+  address: string;
+  gstin: string;
+  phone: string;
+  email?: string;
+  defaultLanguage: 'gu' | 'en' | 'hi';
+  printerThermal: string;
+  printerA4: string;
+  autoPrintReceipt: boolean;
+  exportPath: string;          // e.g. "D:\\Laalwani Exports"
+  backupPath: string;          // e.g. "D:\\Laalwani Backups"
+  backupTime: string;          // e.g. "21:00"
+  lastBackupDate?: string;
+  licenseKey: string;
+  licenseStatus: 'ACTIVE' | 'GRACE' | 'EXPIRED';
+  graceDaysRemaining: number;
+  fastInstantLaunch: boolean;
+
+  // Manual Store Banking Configuration
+  bankName?: string;
+  bankAccountNo?: string;
+  bankIfsc?: string;
+  bankAccountHolder?: string;
+  upiId?: string;
+
+  // Manual Billing & Printing Rules
+  invoicePrefix?: string;      // e.g. "SS/26-27/"
+  estimatePrefix?: string;     // e.g. "EST/2026/"
+  invoiceTerms?: string;
+  defaultGstRate?: number;     // e.g. 18
+  thermalPaperWidth?: '80mm' | '58mm';
+  showBankOnInvoice?: boolean;
+}
 ```
 
 ---
 
 *Manual prepared for Shree Sanitary (Laalwani Commercial ERP) — Enterprise Documentation Directorate.*
+

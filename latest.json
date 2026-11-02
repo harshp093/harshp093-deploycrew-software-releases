@@ -1,11 +1,11 @@
 {
-  "version": "1.8.0",
-  "notes": "1. Complete Removal of AI Sparkles & Dollar Signs: Eliminated AI sparkle icon and replaced all dollar signs with Indian Rupee (₹) across the entire application.\n2. Fixed Duplicate Plus (+) Sign: Completely removed duplicate + prefixes in billing cart and auto-add customer buttons.\n3. Redesigned Financial Intelligence Grid: Replaced puffy floating cards with an executive bordered financial bento grid with refined typography, generous character spacing, and readable high-contrast buttons.\n4. Dropdown-Driven Control Hub: Replaced cluttered horizontal button bars with custom dropdown menus for Dates, Bill Types, Payment Modes, and Display Limits.\n5. Full Manual Settings Control: Added user-editable Store Banking (Bank A/c, IFSC, Holder, UPI VPA) and Billing Rules (Invoice prefixes, GST defaults, thermal width, terms disclaimer).",
-  "pub_date": "2026-11-02T05:05:00Z",
+  "version": "2.0.0",
+  "notes": "1. Capsule-Style Executive UI: Redesigned navigation, action bars, filter bars, and status badges into modern capsule pills.\n2. Returns & Adjustments Engine: Dedicated Returns module for Sales Returns (Credit Notes) & Purchase Returns (Debit Notes) with live stock tally and automated double-entry vouchers.\n3. Intelligent Data Import Suite: Tesseract OCR invoice scanner with auto field extraction, Bulk Excel/CSV column-mapping wizard, and Bank/UPI statement reconciler.\n4. Enterprise Storage & Architecture: DAO Repository abstraction layer, automated v2 migration engine with safety snapshots, and PBKDF2/AES-GCM WebCrypto security.\n5. Automated Safeguards: Scheduled daily backup (21:00) & cash drawer closing backup, interactive PIN-protected backup restore screen, and append-only audit trail ledger.",
+  "pub_date": "2026-11-02T07:05:00Z",
   "platforms": {
     "windows-x86_64": {
       "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/raw/main/Laalwani-Setup.exe",
-      "sha256": "007D8D2D496A54563CF872166EAE21CABB444C7929334F8C3A39952D8E0F445E"
+      "sha256": "0481677B5DBEEE2A6AD0BE7202A19155E19F7912DB1030877D50C88BCB5559F5"
     }
   },
   "view_url": "https://github.com/harshp093/harshp093-deploycrew-software-releases"
