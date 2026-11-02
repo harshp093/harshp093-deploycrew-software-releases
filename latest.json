@@ -1,11 +1,11 @@
 {
-  "version": "2.6.0",
-  "notes": "1. Text & Heading Decluttering: Cleaned up redundant paragraph subtitles and descriptive text beneath headings across Purchases, Customers & Parties, Accounts & Daybook, Returns, and OCR Ingestion.\n2. Harsh Green Elimination & Theme Tuning: Replaced aggressive green headers and Overview tags with sophisticated slate and indigo accents, balanced dark mode contrast across inputs, tables, and dialogs.\n3. Complete CRUD System: Added full Create, Read, Update, and Delete operations across Returns (Credit/Debit Note creation, editing, deletion), OCR Ingestion (line-item adding, inline editing, row removal), CSV batch importer, and Bank Statement Reconciliation (manual entry adding, matching, and deletion).\n4. Middle Mouse Wheel Horizontal TopBar Scroll: Enabled direct middle-wheel mouse scrolling along the horizontal TopNav capsule bar.\n5. Dual Navigation Layout Engine: Introduced instant switching between TopBar Capsule navigation and a collapsible, categorized Left Sidebar in Settings.",
-  "pub_date": "2026-11-02T11:10:00Z",
+  "version": "2.6.1",
+  "notes": "1. Zero Underscore UI Standard: Eliminated all snake_case and text_text patterns application-wide (Audit logs, file exports, category badges, settlement modes, HUD strings).\n2. Subtitle & Heading Redesign: Removed unwanted paragraph subtitles and descriptive text below titles across all modules.\n3. Light & Dark Theme Refinements: Removed harsh green accents in Dashboard and TopNav, applying refined enterprise indigo/slate styling with optimal contrast.\n4. Standalone Windows Desktop Installer v2.6.1 built with zero client-side dependencies.",
+  "pub_date": "2026-11-02T12:20:00Z",
   "platforms": {
     "windows-x86_64": {
       "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/raw/main/Laalwani-Setup.exe",
-      "sha256": "23C29017E7684F23AF28D050D62235173404CA74C18AB33AC9C0AB86E66F753D"
+      "sha256": "57D2BBD7AC22767D0A89BA059DCBB296924C135FF1241C809E6233B8D939FB16"
     }
   },
   "view_url": "https://github.com/harshp093/harshp093-deploycrew-software-releases"
