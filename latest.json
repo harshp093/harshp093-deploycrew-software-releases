@@ -1,11 +1,11 @@
 {
-  "version": "2.1.0",
-  "notes": "1. Upgraded Returns Frontend: Financial intelligence bento cards, visual workflow ribbon, multi-filter pills, rich voucher preview modal with printable slip, and full double-entry accounting automation.\n2. Complete 13-Module Operating Guide: Added in-depth English, Gujarati, and Hindi operational manuals for Returns & Adjustments, Import & OCR Scanner, and Audit & Data Security across the Settings Operating Guide.\n3. Zero Blank Space UI: Informative empty state cards explaining tile returns, transit damage claims, and live inventory tallies.",
-  "pub_date": "2026-11-02T07:19:00Z",
+  "version": "2.2.0",
+  "notes": "1. Single-Word Dashboard Cards: Redesigned KPI metrics into crisp single-word titles (Sales, Cash, Receivables, Payables, Profit) with simplified terminology and high-contrast collection badges.\n2. Minimal Billing Cart Action: Swapped bulky buttons for a fast, minimal text 'Add' action without cluttering icons.\n3. Complete Removal of Estimate Bills: Eliminated estimate bills throughout the software; streamlined billing to standard GST Tax Invoices.\n4. Named Hold Queue: Replaced generic hold timestamps with customer-attributed badges (Hold: [Customer Name]).\n5. 10,000+ Items High-Density Grid & Pagination: Implemented responsive pagination controls (15/25/50/100 per page) and compact rows to prevent scroll fatigue.\n6. Collapsible Vertical Category Drawer: Swapped bulky horizontal category bar for a space-saving collapsible sidebar with live item counts.",
+  "pub_date": "2026-11-02T08:05:00Z",
   "platforms": {
     "windows-x86_64": {
       "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/raw/main/Laalwani-Setup.exe",
-      "sha256": "0A0008EC9D3BBF71A2C4FD9042D9F902E3BCE3144FEE9E5914D4AB84BE8ADB2B"
+      "sha256": "1D75807F0F19320EEA9337D4F10BCA2D100579790F178FA86B2C7D21CC050272"
     }
   },
   "view_url": "https://github.com/harshp093/harshp093-deploycrew-software-releases"
