@@ -1,11 +1,11 @@
 {
-  "version": "2.0.0",
-  "notes": "1. Capsule-Style Executive UI: Redesigned navigation, action bars, filter bars, and status badges into modern capsule pills.\n2. Returns & Adjustments Engine: Dedicated Returns module for Sales Returns (Credit Notes) & Purchase Returns (Debit Notes) with live stock tally and automated double-entry vouchers.\n3. Intelligent Data Import Suite: Tesseract OCR invoice scanner with auto field extraction, Bulk Excel/CSV column-mapping wizard, and Bank/UPI statement reconciler.\n4. Enterprise Storage & Architecture: DAO Repository abstraction layer, automated v2 migration engine with safety snapshots, and PBKDF2/AES-GCM WebCrypto security.\n5. Automated Safeguards: Scheduled daily backup (21:00) & cash drawer closing backup, interactive PIN-protected backup restore screen, and append-only audit trail ledger.",
-  "pub_date": "2026-11-02T07:05:00Z",
+  "version": "2.1.0",
+  "notes": "1. Upgraded Returns Frontend: Financial intelligence bento cards, visual workflow ribbon, multi-filter pills, rich voucher preview modal with printable slip, and full double-entry accounting automation.\n2. Complete 13-Module Operating Guide: Added in-depth English, Gujarati, and Hindi operational manuals for Returns & Adjustments, Import & OCR Scanner, and Audit & Data Security across the Settings Operating Guide.\n3. Zero Blank Space UI: Informative empty state cards explaining tile returns, transit damage claims, and live inventory tallies.",
+  "pub_date": "2026-11-02T07:19:00Z",
   "platforms": {
     "windows-x86_64": {
       "url": "https://github.com/harshp093/harshp093-deploycrew-software-releases/raw/main/Laalwani-Setup.exe",
-      "sha256": "0481677B5DBEEE2A6AD0BE7202A19155E19F7912DB1030877D50C88BCB5559F5"
+      "sha256": "0A0008EC9D3BBF71A2C4FD9042D9F902E3BCE3144FEE9E5914D4AB84BE8ADB2B"
     }
   },
   "view_url": "https://github.com/harshp093/harshp093-deploycrew-software-releases"
